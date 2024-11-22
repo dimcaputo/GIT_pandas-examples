@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = 'Sandrine, la princesse des Poneys'
+__author__ = 'Sandrine, la princesse des Poneys Magiques Etoilés'
 
 import pandas as pd
 
