@@ -2,7 +2,7 @@
 __author__ = "Guy Georges, le prince de l'Est Parisien"
 
 import pandas as pd
-import numpy as np
+import numpy as nppytho
 
 # Load Data
 userHeader = ['user_id', 'gender', 'age', 'ocupation', 'zip']
@@ -61,6 +61,10 @@ print('\n==================================================================\n')
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
 sortRatingsField = cloneDF(mergeRatings)
+<<<<<<< HEAD
 sortRatingsField_correction_Romain = sortRatingsField.groupby(['movie_id', 'title'])['rating'].agg(
+=======
+sortRatingsField_DIMITRI = sortRatingsField.groupby(['movie_id', 'title'])['rating'].agg(
+>>>>>>> ae628c8e5672e2069711644be9a591c06a1c63bf
     COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort_values('COUNT', ascending=False)
 print('My info sorted: \n%s' % sortRatingsField[:15])
